@@ -1,0 +1,18 @@
+local MangoLib = loadstring(game:HttpGet("https://pastebin.com/raw/N3sKKx0a"))()
+MangoLib:Notify("Notification!", "Script made by Rozxino")
+
+local win = MangoLib:Window("Wheet Panel Key System")
+
+local TabFarm = win:Tab("Key System")
+
+TabFarm:TextBox("Type in Key", function(t)
+    if t == "LocalPlayer.Load" then
+     loadstring(game:HttpGet("https://raw.githubusercontent.com/RetroGamesAlt/Main-Wheet/main/Gui.xml"))()  
+    else
+        MangoLib:Notify("Notification!", "Wrong key!")
+    end
+end)
+
+TabFarm:Button("Verify key", function()
+MangoLib:Notify("Notification!", "funtioning ""game.Players.LocalPlayer.(Error)"" Error!")
+end)
